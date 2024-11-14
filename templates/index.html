@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireWatch</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="hero" id="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="../static/css/forestbg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#past-histories">Past Histories</a></li>
+                <li><a href="#firewatch">FireWatch</a></li>
+                <li><a href="#prediction">Prediction</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>FireWatch: Predict, Prevent, Protect</h1>
+            <center><p>An initiative by Thiru Raagavendran S B, advancing community fire safety and awareness</p></center>
+            <center> <p>An Advanced Machine Learning model</p></center>
+            <a href="#about" class="explore-button">Explore</a>
+        </div>
+    </div>
+
+    <div class="section" id="about">
+        <div id="about-content">
+            <h2>About Forests and Forest Fires</h2>
+            <p>
+                Forests cover about 31% of the Earth's land and are crucial for biodiversity, climate regulation, and the water cycle. They provide habitats for countless species, help absorb carbon dioxide, and prevent soil erosion.
+            </p>
+            <p>
+                However, forest fires—whether caused by lightning or human activities—can severely impact these vital ecosystems. While some species are adapted to recover quickly from fires, others face significant threats from habitat loss and soil degradation.
+            </p>
+            <p>
+                <strong>Why Predicting Forest Fires Matters:</strong><br>
+                - <strong>Early Detection:</strong> Helps minimize damage and losses.
+            </p>
+            <p>
+                - <strong>Resource Management:</strong> Improves efficiency in firefighting efforts.
+            </p>
+            <p>
+                - <strong>Conservation:</strong> Aids in protecting and restoring ecosystems.
+            </p>
+            <p>
+                Our project uses advanced data analysis and machine learning to enhance fire prediction and mitigate impacts, safeguarding both the environment and biodiversity.
+            </p>
+        </div>
+    </div>
+    
+
+    <!-- Past Histories Section -->
+<section id="past-histories">
+    <div id="past-histories-content">
+        <h2>Past Wildfire Incidents</h2>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="../static/css/australian.webp" alt="Incident 1">
+                <div class="card-content">
+                    <h3>2019-2020 Australian Bushfire</h3>
+                    <p>The 2019-2020 Australian bushfire season, also known as the "Black Summer," was one of the most devastating fire seasons in Australian history. It affected over 18 million hectares, leading to the loss of 33 people and approximately 3 billion animals, along with massive property damage.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="../static/css/california.jpg" alt="Incident 2">
+                <div class="card-content">
+                    <h3>2018 California Camp Fire</h3>
+                    <p>The Camp Fire was the deadliest and most destructive wildfire in California's history. It started in November 2018 and quickly ravaged the town of Paradise. The fire resulted in 85 civilian fatalities and destroyed over 18,000 structures, causing severe economic and environmental damage.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="../static/css/portugal.jpg" alt="Incident 3">
+                <div class="card-content">
+                    <h3>2016 Fort McMurray Wildfire</h3>
+                    <p>The Fort McMurray wildfire in Alberta, Canada, was one of the most costly wildfires in Canadian history. Starting in May 2016, the fire forced the evacuation of nearly 90,000 residents and destroyed approximately 2,400 homes and buildings, with damages estimated at over $3 billion.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="../static/css/greece.jfif" alt="Incident 4">
+                <div class="card-content">
+                    <h3>2010 Russia Wildfires</h3>
+                    <p>The 2010 Russian wildfires were a series of devastating fires that swept across Russia during a severe heatwave. The fires affected more than 1 million hectares, leading to hundreds of deaths and significant air pollution, which severely impacted human health and agriculture.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Why FireWatch? Section -->
+<section id="firewatch">
+    <div id="firewatch-content">
+        <h2>Why FireWatch?</h2>
+        <p>
+            FireWatch is an advanced forest fire predicting model developed by Thiru Raagavendran S B, leveraging cutting-edge machine learning techniques to enhance fire management and prevention efforts. Central to FireWatch is the Support Vector Classifier algorithm, which is renowned for its exceptional performance in predictive analytics. This sophisticated model integrates critical parameters such as temperature, wind speed, fine fuel moisture, buildup index,fire weather index and initial surface ignition to deliver highly accurate and actionable predictions.
+
+            SVC’s ability to handle complex datasets and uncover intricate patterns makes it an ideal choice for analyzing forest fire risks. Its scalability and efficiency ensure that FireWatch remains adaptable to evolving conditions and large volumes of data. By harnessing the power of SVC, FireWatch provides timely forecasts and invaluable insights, empowering decision-makers to proactively protect ecosystems and communities from the devastating impacts of forest fires.
+        </p>
+    </div>
+</section>
+<!-- Prediction Section -->
+<section id="prediction">
+    <div id="prediction-content">
+        <h1>Forest Fire Prediction</h1>
+        <form method="POST" action="#prediction">
+            <label for="temp">Temperature (°C):</label>
+            <input type="number" id="temp" name="temp" step="any" required><br><br>
+            <label for="ws">Wind Speed (km/h):</label>
+            <input type="number" id="ws" name="ws" step="any" required><br><br>
+            <label for="ffmc">Fine Fuel Moisture Content (0-101):</label>
+            <input type="number" id="ffmc" name="ffmc" step="any" required><br><br>
+            <label for="isi">Initial Surface Ignition (0-20+):</label>
+            <input type="number" id="isi" name="isi" step="any" required><br><br>
+            <label for="bui">Buildup Index(0-128):</label>
+            <input type="number" id="bui" name="bui" step="any" required><br><br>
+            <label for="fwi">Fire Weather Index(0-200):</label>
+            <input type="number" id="fwi" name="fwi" step="any" required><br><br>
+
+            <center><input type="submit" value="Predict" ></center>
+        </form>
+
+        
+            {% if prediction is not none %}
+        <h2>{{ message }}</h2>
+    {% endif %}
+        
+        <p>&copy; 2024 FireWatch. All rights reserved.</p>
+    </div>
+    
+        
+</section>
+
+</body>
+</html>
